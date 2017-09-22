@@ -43,7 +43,7 @@ module.exports.loop = function () {
         var spawningCreep = Game.creeps[Game.spawns['Hydrogen'].spawning.name];
         console.log('Spawning new ' + spawningCreep.memory.role + ' : ' + spawningCreep);
         Game.spawns['Hydrogen'].room.visual.text(
-            '🛠️' + spawningCreep.memory.role,
+            '🛠 ' + spawningCreep.memory.role,
             Game.spawns['Hydrogen'].pos.x + 1,
             Game.spawns['Hydrogen'].pos.y,
             {align: 'left', opacity: 0.8});
